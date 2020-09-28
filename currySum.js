@@ -35,8 +35,4 @@ const infiniteCurry = (fn, seed) => {
   const iSum = infiniteCurry((x, y) => x + y, 0);
   console.log(iSum(1)(34)(12)(12,12 ,13)())
 
-// const incrementEach = (ar) =>
-//   ar.map(num => sum(num))
-// const curriedSum = n => m => o => sum(m,n,o)
-
 // console.log(incrementEach(1)(2)(3))
