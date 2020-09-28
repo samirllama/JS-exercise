@@ -50,13 +50,3 @@ const howMany = text => {
   return time.join(' ')
 }
 console.log(howMany(passage));
-
-
-// 5. Pig Latin
-// Convert any word to Pig Latin, see how to convert here => https://en.wikipedia.org/wiki/Pig_Latin
-const word = "hamlet"
-const pigLatin = text => {
-  const vowels = 'aeiou'
-  return vowels.indexOf(text[0]) !== -1 ? text + 'ay' : pigLatin(text.slice(1) + text[0])
-}
-console.log(pigLatin(word));
